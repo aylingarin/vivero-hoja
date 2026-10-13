@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivero Hoja | Plantas de interior</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Vivero Hoja</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#resenas">Reseñas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="inicio">
+      <h2>Plantas que se quedan a vivir con vos</h2>
+      <p>Plantas de interior fáciles de cuidar, con envíos en San Isidro y zona norte.</p>
+    </section>
+
+    <section id="productos">
+      <h2>Nuestras plantas</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Monstera</h3>
+          <p>Hojas grandes y perforadas. Le gusta la luz indirecta.</p>
+          <p class="precio">$28.000</p>
+        </article>
+        <article class="card">
+          <h3>Potus</h3>
+          <p>Crece en cascada y aguanta olvidos de riego.</p>
+          <p class="precio">$14.500</p>
+        </article>
+        <article class="card">
+          <h3>Sansevieria</h3>
+          <p>Casi indestructible. Necesita poca luz y poca agua.</p>
+          <p class="precio">$18.000</p>
+        </article>
+        <article class="card">
+          <h3>Helecho</h3>
+          <p>Pide humedad y sombra. Ideal para el baño.</p>
+          <p class="precio">$12.000</p>
+        </article>
+        <article class="card">
+          <h3>Suculentas</h3>
+          <p>Sol directo y riego cada dos semanas.</p>
+          <p class="precio">$6.500</p>
+        </article>
+        <article class="card">
+          <h3>Ficus lyrata</h3>
+          <p>Hojas con forma de violín. Necesita mucha luz.</p>
+          <p class="precio">$42.000</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="resenas">
+      <h2>Reseñas</h2>
+      <div class="resenas">
+        <div class="resena">
+          <p>La monstera llegó perfecta y con instrucciones claras.</p>
+          <strong>Martín R.</strong>
+        </div>
+        <div class="resena">
+          <p>Me asesoraron para un departamento con poca luz. Acertaron con el potus.</p>
+          <strong>Carolina P.</strong>
+        </div>
+        <div class="resena">
+          <p>Compré tres suculentas para regalar y quedaron hermosas.</p>
+          <strong>Julián S.</strong>
+        </div>
+        <div class="resena">
+          <p>Atención cálida y plantas sanas. Vuelvo seguro.</p>
+          <strong>Valeria G.</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <div class="contacto-form">
+        <h2>Contacto</h2>
+        <form action="https://formspree.io/f/xqpeydrr" method="POST">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+
+      <iframe
+        title="Mapa de San Isidro, Buenos Aires"
+        src="https://www.google.com/maps?q=San+Isidro,+Buenos+Aires&output=embed">
+      </iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Vivero Hoja. San Isidro, Buenos Aires.</p>
+  </footer>
+
+</body>
+</html>

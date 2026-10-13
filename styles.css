@@ -1,0 +1,177 @@
+/* Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #f2f5ee;
+  color: #16261d;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Header y navegación */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #1f3d2b;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #e8b422;
+}
+
+/* Inicio (fondo con degradado) */
+.inicio {
+  max-width: none;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(160deg, #2f6b3f, #1f3d2b);
+}
+
+.inicio h2 {
+  font-size: 2.5rem;
+}
+
+/* Productos (Flexbox) */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 280px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+}
+
+.precio {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #2f6b3f;
+}
+
+/* Reseñas (Grid) */
+.resenas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.resena {
+  padding: 20px;
+  background-color: #dfe9d6;
+  border-radius: 10px;
+}
+
+/* Contacto */
+.contacto {
+  display: flex;
+  gap: 30px;
+}
+
+.contacto-form {
+  flex: 1;
+}
+
+.contacto iframe {
+  flex: 1;
+  min-height: 300px;
+  border: 0;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #b9c7b0;
+  border-radius: 6px;
+}
+
+button {
+  padding: 12px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #e8b422;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #1f3d2b;
+  color: white;
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+  .contacto {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .resenas {
+    grid-template-columns: 1fr;
+  }
+}
